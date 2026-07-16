@@ -678,8 +678,10 @@ This tutorial relies on objects being created so that they are aligned to the vi
 }
 
 
-\newcommand{\Ja}[1]{\Checkmark {\bfseries Ja}}
-\newcommand{\Nein}[1]{\XSolidBrush {\bfseries Nein}}
+% \newcommand{\Ja}[1]{\Checkmark {\bfseries Ja}}
+\newcommand{\Ja}[1]{\ding{51} {\bfseries Ja}}       % Standard pifont checkmark
+% \newcommand{\Nein}[1]{\XSolidBrush {\bfseries Nein}}
+\newcommand{\Nein}[1]{\ding{55} {\bfseries Nein}}   % Standard pifont X-cross
 
 \newcommand{\SVGVersions}[8]{
 {\scriptsize
