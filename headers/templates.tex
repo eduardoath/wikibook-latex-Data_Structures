@@ -134,10 +134,16 @@ This code example uses #1 Syntax
 }
 
 
-\newcommand{\LaTeXShadedColorBoxTemplate}[2]{
-{\linewidth}#1\begin{myshaded}
-#2
-\end{myshaded}
+%\newcommand{\LaTeXShadedColorBoxTemplate}[2]{
+%{\linewidth}#1\begin{myshaded}
+%#2
+%\end{myshaded}
+%}
+
+\newcommand{\LaTeXShadedColorBoxTemplate}[2]{%
+\begin{myshaded}{#1} % Pass argument 1 (e.g., color)
+    #2               % Pass argument 2 (the content)
+\end{myshaded}%
 }
 
 \newcommand{\PGP}[1]{PGP:#1}
